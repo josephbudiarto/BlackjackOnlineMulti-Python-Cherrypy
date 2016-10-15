@@ -1,0 +1,319 @@
+body {
+	margin: 0 auto;
+}
+.rel{
+	background: url("pool.png") no-repeat;
+}
+.card {
+	position: relative;
+	float: left;
+	display: inline-block;
+	height: 100px;
+	width: 80px;
+	transition: all 0.2s ease-in-out;
+}
+
+.deck {
+	position: absolute;
+	border:solid black 3px;
+	height: 100px;
+	width: 80px;
+	left: calc(50% - 75px);
+	top:45%;	
+	z-index: 100;
+}
+.deck .card {
+	position: absolute;
+	transition: all 0.5s ease-in-out;
+
+}
+
+.hand {
+	position: absolute;
+	width: 80%;
+	left:10%;
+	bottom: 0;
+	height: 100px;
+}
+#player1 .hand .card:hover {
+	z-index: 1000;
+	transition: transform 0.2s ease-in-out;
+	transform: scale(1.2) translateY(-70px);
+
+}
+#players{
+	position:absolute;
+	left : 10px;
+	top : -10px;
+	color : wheat;
+	font-size: 1.0em ;
+	font-family: Impact, Charcoal, sans-serif;
+}
+.player {
+	position: absolute;
+	height: 150px;
+	width: 100%;
+	color:wheat;
+}
+#player1 {
+	position: absolute;
+	bottom: 0px;
+}
+
+#player3 {
+	top:13%;	
+	transform: rotateX(180deg);
+}
+#player3 .hand {
+	width: 50%;
+	left: 25%;
+	bottom: 0;
+	height: 100px;
+	transform: rotateY(180);
+}
+#player2 {
+	width: 60%;
+	right: -25%;
+	top:40%;
+	transform: rotateZ(90deg);
+}
+#draw
+{
+	position: absolute;
+	top : 300px;
+	left :195px;
+}
+#pass
+{
+	position: absolute;
+	top : 300px;
+	left :245px;
+}
+#player4 {
+	width: 60%;
+	left: -25%;
+	top:40%;
+	transform: rotateZ(-90deg);
+}
+
+
+/*cards*/
+
+#card-2S {
+	background: url(cards/2S.png);
+	background-size: 80px 100px;
+}
+#card-3S {
+	background: url(cards/3S.png);
+	background-size: 80px 100px;
+}
+#card-4S {
+	background: url(cards/4S.png);
+	background-size: 80px 100px;
+}
+#card-5S {
+	background: url(cards/5S.png);
+	background-size: 80px 100px;
+}
+#card-6S {
+	background: url(cards/6S.png);
+	background-size: 80px 100px;
+}
+#card-7S {
+	background: url(cards/7S.png);
+	background-size: 80px 100px;
+}
+#card-8S {
+	background: url(cards/8S.png);
+	background-size: 80px 100px;
+}
+#card-9S {
+	background: url(cards/9S.png);
+	background-size: 80px 100px;
+}
+#card-10S {
+	background: url(cards/10S.png);
+	background-size: 80px 100px;
+}
+#card-JS {
+	background: url(cards/JS.png);
+	background-size: 80px 100px;
+}
+#card-QS {
+	background: url(cards/QS.png);
+	background-size: 80px 100px;
+}
+#card-KS {
+	background: url(cards/KS.png);
+	background-size: 80px 100px;
+}
+#card-AS {
+	background: url(cards/AS.png);
+	background-size: 80px 100px;
+}
+
+
+#card-2C {
+	background: url(cards/2C.png);
+	background-size: 80px 100px;
+}
+#card-3C {
+	background: url(cards/3C.png);
+	background-size: 80px 100px;
+}
+#card-4C {
+	background: url(cards/4C.png);
+	background-size: 80px 100px;
+}
+#card-5C {
+	background: url(cards/5C.png);
+	background-size: 80px 100px;
+}
+#card-6C {
+	background: url(cards/6C.png);
+	background-size: 80px 100px;
+}
+#card-7C {
+	background: url(cards/7C.png);
+	background-size: 80px 100px;
+}
+#card-8C {
+	background: url(cards/8C.png);
+	background-size: 80px 100px;
+}
+#card-9C {
+	background: url(cards/9C.png);
+	background-size: 80px 100px;
+}
+#card-10C {
+	background: url(cards/10C.png);
+	background-size: 80px 100px;
+}
+#card-JC {
+	background: url(cards/JC.png);
+	background-size: 80px 100px;
+}
+#card-QC {
+	background: url(cards/QC.png);
+	background-size: 80px 100px;
+}
+#card-KC {
+	background: url(cards/KC.png);
+	background-size: 80px 100px;
+}
+#card-AC {
+	background: url(cards/AC.png);
+	background-size: 80px 100px;
+}
+
+
+#card-2D {
+	background: url(cards/2D.png);
+	background-size: 80px 100px;
+}
+#card-3D {
+	background: url(cards/3D.png);
+	background-size: 80px 100px;
+}
+#card-4D {
+	background: url(cards/4D.png);
+	background-size: 80px 100px;
+}
+#card-5D {
+	background: url(cards/5D.png);
+	background-size: 80px 100px;
+}
+#card-6D {
+	background: url(cards/6D.png);
+	background-size: 80px 100px;
+}
+#card-7D {
+	background: url(cards/7D.png);
+	background-size: 80px 100px;
+}
+#card-8D {
+	background: url(cards/8D.png);
+	background-size: 80px 100px;
+}
+#card-9D {
+	background: url(cards/9D.png);
+	background-size: 80px 100px;
+}
+#card-10D {
+	background: url(cards/10D.png);
+	background-size: 80px 100px;
+}
+#card-JD {
+	background: url(cards/JD.png);
+	background-size: 80px 100px;
+}
+#card-QD {
+	background: url(cards/QD.png);
+	background-size: 80px 100px;
+}
+#card-KD {
+	background: url(cards/KD.png);
+	background-size: 80px 100px;
+}
+#card-AD {
+	background: url(cards/AD.png);
+	background-size: 80px 100px;
+}
+
+
+#card-2H {
+	background: url(cards/2H.png);
+	background-size: 80px 100px;
+}
+#card-3H {
+	background: url(cards/3H.png);
+	background-size: 80px 100px;
+}
+#card-4H {
+	background: url(cards/4H.png);
+	background-size: 80px 100px;
+}
+#card-5H {
+	background: url(cards/5S.png);
+	background-size: 80px 100px;
+}
+#card-6H {
+	background: url(cards/6H.png);
+	background-size: 80px 100px;
+}
+#card-7H {
+	background: url(cards/7H.png);
+	background-size: 80px 100px;
+}
+#card-8H {
+	background: url(cards/8H.png);
+	background-size: 80px 100px;
+}
+#card-9H {
+	background: url(cards/9S.png);
+	background-size: 80px 100px;
+}
+#card-10H {
+	background: url(cards/10H.png);
+	background-size: 80px 100px;
+}
+#card-JH {
+	background: url(cards/JH.png);
+	background-size: 80px 100px;
+}
+#card-QH {
+	background: url(cards/QH.png);
+	background-size: 80px 100px;
+}
+#card-KH {
+	background: url(cards/KH.png);
+	background-size: 80px 100px;
+}
+#card-AH {
+	background: url(cards/AH.png);
+	background-size: 80px 100px;
+}
+.back {
+	background: url(cards/back.png);
+	background-size: 80px 100px;
+}
